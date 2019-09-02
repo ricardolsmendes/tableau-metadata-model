@@ -1,0 +1,13 @@
+@startuml
+
+title The TableauUser class
+
+
+class TableauUser {
+  -String id
+  -String uri
+  -String username
+  -String name
+}
+
+@enduml

@@ -1,0 +1,25 @@
+@startuml
+
+!include site-class.plantuml
+!include tableau-user-class.plantuml
+
+
+title The Workbook class
+
+
+class Workbook {
+  -String id
+  -String name
+  -String projectName
+  -String description
+  -String uri
+  -String vizportalUrlId
+  -String createdAt
+  -String updatedAt
+}
+
+
+Site -o Workbook : site
+TableauUser --o Workbook : owner
+
+@enduml

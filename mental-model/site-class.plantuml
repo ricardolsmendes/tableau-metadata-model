@@ -1,0 +1,13 @@
+@startuml
+
+title The Site class
+
+
+class Site {
+  -String id
+  -String uri
+  -String luid
+  -String name
+}
+
+@enduml
