@@ -1,0 +1,25 @@
+@startuml
+
+!includesub dashboard-class.plantuml!CLASSDESCRIPTION
+!includesub sheet-class.plantuml!CLASSDESCRIPTION
+!includesub site-class.plantuml!CLASSDESCRIPTION
+!includesub tableau-user-class.plantuml!CLASSDESCRIPTION
+!includesub view-class.plantuml!CLASSDESCRIPTION
+!includesub workbook-class.plantuml!CLASSDESCRIPTION
+
+
+title Core entities
+
+
+Site --o Workbook : site
+TableauUser -o Workbook : owner
+Workbook ---o View  : workbook
+Workbook *-- "0..*" View: views
+Workbook *- "0..*" Sheet: sheets
+
+Dashboard <|-- View
+Dashboard *- "0..*" Sheet: sheets
+
+Sheet <|- View
+
+@enduml

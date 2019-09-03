@@ -3,11 +3,13 @@
 title The Site class
 
 
+!startsub CLASSDESCRIPTION
 class Site {
-  -String id
+  -ID id
   -String uri
   -String luid
   -String name
 }
+!endsub
 
 @enduml

@@ -1,0 +1,16 @@
+@startuml
+
+!includesub view-class.plantuml!CLASSDESCRIPTION
+
+
+title The Dashboard class
+
+
+!startsub CLASSDESCRIPTION
+class Dashboard
+!endsub
+
+
+Dashboard <|-- View
+
+@enduml

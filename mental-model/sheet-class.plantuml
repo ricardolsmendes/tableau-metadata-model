@@ -1,0 +1,16 @@
+@startuml
+
+!includesub view-class.plantuml!CLASSDESCRIPTION
+
+
+title The Sheet class
+
+
+!startsub CLASSDESCRIPTION
+class Sheet
+!endsub
+
+
+Sheet <|-- View
+
+@enduml

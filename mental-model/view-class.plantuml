@@ -1,0 +1,24 @@
+@startuml
+
+!include workbook-class.plantuml
+
+
+title The View interface
+
+
+!startsub CLASSDESCRIPTION
+interface View {
+  -ID id
+  -String name
+  -String luid
+  -String path
+  -DateTime createdAt
+  -DateTime updatedAt
+  -int index
+}
+!endsub
+
+
+Workbook -o View  : workbook
+
+@enduml

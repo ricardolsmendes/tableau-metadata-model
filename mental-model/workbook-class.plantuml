@@ -7,17 +7,19 @@
 title The Workbook class
 
 
+!startsub CLASSDESCRIPTION
 class Workbook {
-  -String id
+  -ID id
   -String name
+  -String luid
   -String projectName
   -String description
   -String uri
   -String vizportalUrlId
-  -String createdAt
-  -String updatedAt
+  -DateTime createdAt
+  -DateTime updatedAt
 }
-
+!endsub
 
 Site -o Workbook : site
 TableauUser --o Workbook : owner
