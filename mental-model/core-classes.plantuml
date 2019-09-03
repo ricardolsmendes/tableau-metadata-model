@@ -8,7 +8,7 @@
 !includesub workbook-class.plantuml!CLASSDESCRIPTION
 
 
-title Core entities
+title A mental model on Tableau Metadata API core entities\n
 
 
 Site --o Workbook : site
